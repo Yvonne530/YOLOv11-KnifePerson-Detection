@@ -1,6 +1,3 @@
-我帮您整理和修正了格式问题，以下是优化后的版本：
-
-```markdown
 # 🛡️ Knife Detection with YOLOv11
 
 本项目基于 Ultralytics YOLOv11 框架，完成了"拿刀人"视觉检测模型的训练任务。模型能有效检测图像中的"knife"和"person"类别，适用于安防和监控场景。
