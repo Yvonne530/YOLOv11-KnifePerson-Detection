@@ -22,7 +22,8 @@
 
 ## 📝 data.yaml 内容
 
-```yaml
+```
+yaml
 train: train/images
 val: valid/images
 test: test/images
