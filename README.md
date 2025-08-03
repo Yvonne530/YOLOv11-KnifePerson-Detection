@@ -39,3 +39,36 @@ names: ['knife', 'person']
 
 ```bash
 pip install -r requirements.txt
+
+
+---
+##🔧 模型训练
+###训练命令
+yolo detect train model=yolo11m.pt data=D:/ultralytics-main/ultralytics-main/knife_dataset/data.yaml epochs=100 imgsz=640
+
+
+---
+## 📊 模型评估指标
+
+验证集结果如下：
+
+| 类别   | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|--------|-----------|--------|---------|--------------|
+| all    | 0.822     | 0.729  | 0.787   | 0.569        |
+| knife  | 0.760     | 0.512  | 0.602   | 0.303        |
+| person | 0.885     | 0.947  | 0.972   | 0.834        |
+
+- 模型整体检测效果良好，`person` 类表现尤为突出；
+- `knife` 类召回率相对较低，建议结合实际场景进一步优化。
+
+---
+
+## 🔍 模型推理示例
+
+### ✅ 单张图像预测
+
+```bash
+yolo detect predict model=runs/detect/train5/weights/best.pt source=sample_images/test1.jpg
+
+
+pip install -r requirements.txt
