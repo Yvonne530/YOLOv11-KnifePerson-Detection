@@ -17,6 +17,7 @@
 
 ## 目录结构
 
+```
 ultralytics-main/
 ├── .github/
 ├── docker/
@@ -34,14 +35,14 @@ ultralytics-main/
 │   ├── test/
 │   │   ├── images/
 │   │   └── labels/
-│   └── data.yaml                          # 数据集配置文件
-├── runs/                                 # 训练和推理结果文件夹
+│   └── data.yaml               # 数据集配置文件
+├── runs/                       # 训练和推理结果文件夹
 │   └── detect/
-│       ├── train5/                       # 训练过程输出
+│       ├── train5/             # 训练过程输出
 │       │   └── BoxP_curve.png
-│       └── predict/                      # 推理过程输出
+│       └── predict/            # 推理过程输出
 │           ├── 25_jpg.rf.843db44eb00ed3c7a8b29f9772182ad0.jpg
-│           └── ...                      # 其他推理生成的文件
+│           └── ...             # 其他推理生成的文件
 ├── dockerignore
 ├── .gitignore
 ├── CITATION.cff
@@ -51,7 +52,8 @@ ultralytics-main/
 ├── pyproject.toml
 ├── README.md
 ├── README.zh-CN.md
-└── yolo11m.pt                            # 预训练模型权重文件
+└── yolo11m.pt                  # 预训练模型权重文件
+```
 
 
 ---
